@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class move : MonoBehaviour {
 
-    public float multiplier;
+    public static float multiplier = 100;
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(Vector3.forward * Time.deltaTime*multiplier);
+        transform.Translate(Vector3.forward * Time.deltaTime * multiplier);
     }
 }
